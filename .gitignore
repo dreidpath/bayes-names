@@ -22,3 +22,7 @@ vignettes/*.pdf
 
 # Data files
 *.csv
+
+# This file sets up anonymous names and should not
+# be stored on github
+prepare-data.R
