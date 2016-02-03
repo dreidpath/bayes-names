@@ -17,6 +17,7 @@ The "workflow-bayesnames.R" file is the work horse.  You can run that file and i
 When it has finished running you can see the actual and predicted classifications for the training and test data with:
 
 print(classDF.train.tab)  # Classification table for the training data
+
 print(classDF.test.tab)  # Classification table for the test data
 
 More detailed information is saved in: "BayesTestOutput.csv" and "BayesTrainOutput.csv"
