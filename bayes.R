@@ -140,8 +140,12 @@ NameBayes <- function (priors, name, likelihoodDF, pad=F, xletSize=3){
     }
   }
   # Return a one row data frame with the name and the posterior probabilities
-  return( data.frame( cbind( name, rbind( priors ) ) ) ) 
+  returnDF <- data.frame( cbind( name, rbind( priors ) ) )
+  names(returnDF) <- c("name", "group1", "group2", "group3")
+  return( returnDF ) 
 }
+
+
 
 
 
